@@ -4,6 +4,8 @@ import routes from "./src/routes/postsRoutes.js";
 
 routes(app);
 
+app.use(express.static("uploads"));
+
 app.listen(3000, () => {
   console.log("Servidor rodando na porta 3000 !");
 });
